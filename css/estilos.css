@@ -231,6 +231,7 @@ button {
     0%, 100% {
         transform: translate(-50%, 0);
     }
+
     50% {
         transform: translate(-50%, 10px);
     }
@@ -692,8 +693,10 @@ button {
         height: 460px;
     }
 
+    /* Las 3 tarjetas Medjool se mantienen juntas */
     .tarjetas {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
     }
 
     .lista-beneficios {
@@ -753,6 +756,7 @@ button {
         height: 360px;
     }
 
+    /* En celular las 3 tarjetas van una debajo de otra */
     .tarjetas,
     .lista-beneficios,
     .galeria-grid {
