@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meryglez02.github.io/DATILES-DEL-VALLE/sitemap.xml
