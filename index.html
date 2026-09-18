@@ -46,13 +46,21 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": "LocalBusiness",
+      "@id": "https://datilesdelvalle.run.place/#business",
       "name": "Dátiles del Valle",
       "url": "https://datilesdelvalle.run.place/",
-      "logo": "https://datilesdelvalle.run.place/img/portada.jpg",
       "image": "https://datilesdelvalle.run.place/img/portada.jpg",
       "description": "Dátiles del Valle ofrece dátiles Medjool seleccionados con envíos a todo México.",
       "telephone": "+52 686 759 5757",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calzada Francisco L. Montejano No. 1298, Local 27, Jardines del Valle",
+        "addressLocality": "Mexicali",
+        "addressRegion": "Baja California",
+        "postalCode": "21270",
+        "addressCountry": "MX"
+      },
       "sameAs": [
         "https://www.facebook.com/share/1FQwCUBcZm/"
       ]
@@ -669,8 +677,7 @@
     <button
         id="volverArriba"
         class="volver-arriba"
-        aria-label="Volver arriba"
-    >
+        aria-label="Volver arriba">
         ↑
     </button>
 
