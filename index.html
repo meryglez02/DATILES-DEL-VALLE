@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">
@@ -7,28 +7,36 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
+    <!-- SEO PRINCIPAL -->
     <title>Dátiles del Valle | Dátiles Medjool en México</title>
 
     <meta name="description"
-          content="Dátiles del Valle ofrece dátiles Medjool seleccionados desde Mexicali, Baja California, con envíos a todo México. Conoce nuestros productos y contáctanos por WhatsApp o Facebook.">
+          content="Dátiles del Valle ofrece dátiles Medjool seleccionados desde Mexicali, Baja California, con envíos a todo México. Consulta disponibilidad por WhatsApp o Facebook.">
 
     <meta name="author"
           content="Dátiles del Valle">
 
     <meta name="robots"
-          content="index, follow">
+          content="index, follow, max-image-preview:large">
 
-    <!-- Dirección principal de la página -->
+    <!-- URL CANÓNICA -->
     <link rel="canonical"
           href="https://datilesdelvalle.run.place/">
 
-    <!-- Vista previa al compartir -->
+    <!-- PRECARGA DE IMAGEN PRINCIPAL -->
+    <link rel="preload"
+          as="image"
+          href="img/portada.jpg">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:site_name"
+          content="Dátiles del Valle">
+
     <meta property="og:title"
           content="Dátiles del Valle | Dátiles Medjool en México">
 
     <meta property="og:description"
-          content="Conoce los dátiles Medjool de Dátiles del Valle en Mexicali, Baja California, con envíos a todo México.">
+          content="Dátiles Medjool seleccionados desde Mexicali, Baja California, con envíos a todo México.">
 
     <meta property="og:type"
           content="website">
@@ -39,49 +47,95 @@
     <meta property="og:image"
           content="https://datilesdelvalle.run.place/img/portada.jpg">
 
+    <meta property="og:image:alt"
+          content="Dátiles Medjool de Dátiles del Valle">
+
     <meta property="og:locale"
           content="es_MX">
 
-    <!-- Datos estructurados Schema.org -->
+    <!-- VISTA PREVIA EN REDES -->
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="Dátiles del Valle | Dátiles Medjool en México">
+
+    <meta name="twitter:description"
+          content="Dátiles Medjool seleccionados desde Mexicali, Baja California, con envíos a todo México.">
+
+    <meta name="twitter:image"
+          content="https://datilesdelvalle.run.place/img/portada.jpg">
+
+    <!-- DATOS ESTRUCTURADOS -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "@id": "https://datilesdelvalle.run.place/#business",
-      "name": "Dátiles del Valle",
-      "url": "https://datilesdelvalle.run.place/",
-      "image": "https://datilesdelvalle.run.place/img/portada.jpg",
-      "description": "Dátiles del Valle ofrece dátiles Medjool seleccionados desde Mexicali, Baja California, con envíos a todo México.",
-      "telephone": "+52 686 759 5757",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Calzada Francisco L. Montejano No. 1298, Local 27, Jardines del Valle",
-        "addressLocality": "Mexicali",
-        "addressRegion": "Baja California",
-        "postalCode": "21270",
-        "addressCountry": "MX"
-      },
-      "sameAs": [
-        "https://www.facebook.com/share/1FQwCUBcZm/"
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://datilesdelvalle.run.place/#website",
+          "url": "https://datilesdelvalle.run.place/",
+          "name": "Dátiles del Valle",
+          "inLanguage": "es-MX",
+          "publisher": {
+            "@id": "https://datilesdelvalle.run.place/#business"
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://datilesdelvalle.run.place/#business",
+          "name": "Dátiles del Valle",
+          "url": "https://datilesdelvalle.run.place/",
+          "image": "https://datilesdelvalle.run.place/img/portada.jpg",
+          "description": "Dátiles del Valle ofrece dátiles Medjool seleccionados desde Mexicali, Baja California, con envíos a todo México.",
+          "telephone": "+52 686 759 5757",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Calzada Francisco L. Montejano No. 1298, Local 27, Jardines del Valle",
+            "addressLocality": "Mexicali",
+            "addressRegion": "Baja California",
+            "postalCode": "21270",
+            "addressCountry": "MX"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "México"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+52 686 759 5757",
+            "contactType": "customer service",
+            "availableLanguage": "es"
+          },
+          "sameAs": [
+            "https://www.facebook.com/share/1FQwCUBcZm/"
+          ]
+        }
       ]
     }
     </script>
 
-    <!-- Estilos -->
-    <link rel="stylesheet" href="css/estilos.css">
+    <!-- ESTILOS -->
+    <link rel="stylesheet"
+          href="css/estilos.css">
+
 </head>
 
 
 <body>
 
-    <!-- Encabezado -->
+    <!-- ENCABEZADO -->
     <header class="encabezado">
 
         <div class="contenedor navegacion">
 
-            <a href="#inicio" class="logo">
+            <a href="#inicio"
+               class="logo"
+               aria-label="Dátiles del Valle - Inicio">
+
                 <span>DÁTILES</span>
                 <small>DEL VALLE</small>
+
             </a>
 
             <button class="menu-boton"
@@ -90,13 +144,30 @@
                 ☰
             </button>
 
-            <nav class="menu" id="menu">
+            <nav class="menu"
+                 id="menu"
+                 aria-label="Navegación principal">
+
                 <a href="#inicio">Inicio</a>
+
                 <a href="#nosotros">Conócenos</a>
-                <a href="#productos">Nuestros dátiles</a>
-                <a href="#beneficios">Características</a>
-                <a href="#galeria">Galería</a>
-                <a href="#contacto">Contacto</a>
+
+                <a href="#productos">
+                    Dátiles Medjool
+                </a>
+
+                <a href="#beneficios">
+                    Características
+                </a>
+
+                <a href="#galeria">
+                    Galería
+                </a>
+
+                <a href="#contacto">
+                    Contacto
+                </a>
+
             </nav>
 
             <a
@@ -104,6 +175,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="boton-facebook"
+                aria-label="Visitar Facebook de Dátiles del Valle"
             >
                 Facebook
             </a>
@@ -115,8 +187,9 @@
 
     <main>
 
-        <!-- Portada -->
-        <section class="hero" id="inicio">
+        <!-- PORTADA -->
+        <section class="hero"
+                 id="inicio">
 
             <div class="hero-fondo"></div>
 
@@ -132,8 +205,9 @@
                 </h1>
 
                 <p class="hero-texto">
-                    Descubre el sabor y la calidad de nuestros dátiles Medjool.
-                    Desde Mexicali, Baja California, con envíos a todo México.
+                    Descubre nuestros dátiles Medjool seleccionados
+                    desde Mexicali, Baja California, con envíos a todo México.
+                    Conoce su sabor, características y disponibilidad.
                 </p>
 
                 <div class="hero-botones">
@@ -158,14 +232,14 @@
 
             <a href="#nosotros"
                class="bajar"
-               aria-label="Continuar">
+               aria-label="Conocer más sobre Dátiles del Valle">
                 ↓
             </a>
 
         </section>
 
 
-        <!-- Nosotros -->
+        <!-- NOSOTROS -->
         <section class="seccion seccion-animada"
                  id="nosotros">
 
@@ -175,7 +249,7 @@
 
                     <img
                         src="img/nosotros.jpg"
-                        alt="Dátiles Medjool seleccionados de Dátiles del Valle"
+                        alt="Dátiles Medjool seleccionados de Dátiles del Valle en Mexicali"
                         loading="lazy"
                     >
 
@@ -188,7 +262,7 @@
                     </span>
 
                     <h2>
-                        El sabor que nace del valle
+                        Dátiles Medjool desde Mexicali
                     </h2>
 
                     <div class="linea"></div>
@@ -202,17 +276,14 @@
 
                     <p>
                         Nuestro objetivo es acercarte a nuestros productos
-                        y brindarte información para que conozcas
-                        mejor sus características.
+                        y brindarte información sobre sus características,
+                        disponibilidad y opciones de envío a diferentes
+                        lugares de México.
                     </p>
 
-                    <a
-                        href="https://www.facebook.com/share/1FQwCUBcZm/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="enlace"
-                    >
-                        Conócenos en Facebook →
+                    <a href="#contacto"
+                       class="enlace">
+                        Consultar disponibilidad y envíos →
                     </a>
 
                 </div>
@@ -222,7 +293,7 @@
         </section>
 
 
-        <!-- Productos -->
+        <!-- PRODUCTOS -->
         <section class="seccion productos seccion-animada"
                  id="productos">
 
@@ -234,11 +305,14 @@
                         NUESTRA SELECCIÓN
                     </span>
 
-                    <h2>Dátiles Medjool</h2>
+                    <h2>
+                        Dátiles Medjool seleccionados
+                    </h2>
 
                     <p>
-                        Conoce nuestros dátiles Medjool seleccionados,
-                        disponibles desde Mexicali con envíos a todo México.
+                        Conoce nuestra selección de dátiles Medjool
+                        disponibles desde Mexicali, Baja California,
+                        con envíos a todo México.
                     </p>
 
                 </div>
@@ -246,14 +320,14 @@
 
                 <div class="tarjetas">
 
-                    <!-- Medjool 1 -->
+                    <!-- MEDJOOL 1 -->
                     <article class="tarjeta">
 
                         <div class="tarjeta-imagen">
 
                             <img
                                 src="img/medjool1.jpg"
-                                alt="Dátiles Medjool seleccionados"
+                                alt="Dátiles Medjool seleccionados de Dátiles del Valle"
                                 loading="lazy"
                             >
 
@@ -263,11 +337,13 @@
 
                             <span>MEDJOOL</span>
 
-                            <h3>Medjool</h3>
+                            <h3>
+                                Dátiles Medjool seleccionados
+                            </h3>
 
                             <p>
-                                Dátiles seleccionados con una
-                                presentación cuidada y de calidad.
+                                Dátiles cuidadosamente seleccionados
+                                con una presentación de calidad.
                             </p>
 
                         </div>
@@ -275,14 +351,14 @@
                     </article>
 
 
-                    <!-- Medjool 2 -->
+                    <!-- MEDJOOL 2 -->
                     <article class="tarjeta">
 
                         <div class="tarjeta-imagen">
 
                             <img
                                 src="img/medjool2.jpg"
-                                alt="Dátiles Medjool de Dátiles del Valle"
+                                alt="Presentación de dátiles Medjool de Dátiles del Valle"
                                 loading="lazy"
                             >
 
@@ -292,11 +368,14 @@
 
                             <span>MEDJOOL</span>
 
-                            <h3>Medjool</h3>
+                            <h3>
+                                Textura del dátil Medjool
+                            </h3>
 
                             <p>
-                                Una variedad reconocida por su
-                                textura y agradable presentación.
+                                El dátil Medjool es una variedad
+                                reconocida por su textura y agradable
+                                presentación.
                             </p>
 
                         </div>
@@ -304,14 +383,14 @@
                     </article>
 
 
-                    <!-- Medjool 3 -->
+                    <!-- MEDJOOL 3 -->
                     <article class="tarjeta">
 
                         <div class="tarjeta-imagen">
 
                             <img
                                 src="img/medjool3.jpg"
-                                alt="Dátiles Medjool disponibles en México"
+                                alt="Dátiles Medjool disponibles con envíos a México"
                                 loading="lazy"
                             >
 
@@ -321,11 +400,13 @@
 
                             <span>MEDJOOL</span>
 
-                            <h3>Medjool</h3>
+                            <h3>
+                                Sabor del dátil Medjool
+                            </h3>
 
                             <p>
-                                Conoce el característico sabor
-                                de nuestros dátiles Medjool.
+                                Disfruta el característico sabor
+                                naturalmente dulce de los dátiles Medjool.
                             </p>
 
                         </div>
@@ -339,7 +420,7 @@
         </section>
 
 
-        <!-- Características -->
+        <!-- CARACTERÍSTICAS -->
         <section class="seccion beneficios seccion-animada"
                  id="beneficios">
 
@@ -352,12 +433,12 @@
                     </span>
 
                     <h2>
-                        Características de nuestros dátiles Medjool
+                        Características de los dátiles Medjool
                     </h2>
 
                     <p>
                         Conoce algunas de las características
-                        de nuestros productos.
+                        que distinguen a esta variedad de dátil.
                     </p>
 
                 </div>
@@ -371,11 +452,13 @@
                             01
                         </div>
 
-                        <h3>Sabor natural</h3>
+                        <h3>
+                            Sabor natural
+                        </h3>
 
                         <p>
-                            Los dátiles se caracterizan por
-                            su agradable sabor naturalmente dulce.
+                            Los dátiles Medjool se caracterizan
+                            por su agradable sabor naturalmente dulce.
                         </p>
 
                     </div>
@@ -387,11 +470,13 @@
                             02
                         </div>
 
-                        <h3>Textura</h3>
+                        <h3>
+                            Textura
+                        </h3>
 
                         <p>
                             Su textura es una de las características
-                            que distingue al dátil Medjool.
+                            que distingue a la variedad Medjool.
                         </p>
 
                     </div>
@@ -403,11 +488,13 @@
                             03
                         </div>
 
-                        <h3>Versátil</h3>
+                        <h3>
+                            Versatilidad
+                        </h3>
 
                         <p>
-                            Puede disfrutarse solo o utilizarse
-                            en diferentes preparaciones.
+                            Los dátiles pueden disfrutarse solos
+                            o utilizarse en diferentes preparaciones.
                         </p>
 
                     </div>
@@ -419,11 +506,13 @@
                             04
                         </div>
 
-                        <h3>Selección</h3>
+                        <h3>
+                            Selección
+                        </h3>
 
                         <p>
-                            Buscamos ofrecer una presentación
-                            cuidada de nuestros productos.
+                            En Dátiles del Valle buscamos ofrecer
+                            productos con una presentación cuidada.
                         </p>
 
                     </div>
@@ -435,7 +524,7 @@
         </section>
 
 
-        <!-- Galería -->
+        <!-- GALERÍA -->
         <section class="seccion galeria seccion-animada"
                  id="galeria">
 
@@ -459,7 +548,7 @@
                     <button
                         class="foto-galeria"
                         data-imagen="img/galeria1.jpg"
-                        aria-label="Ver imagen de Dátiles del Valle"
+                        aria-label="Ver fotografía de dátiles Medjool de Dátiles del Valle"
                     >
 
                         <img
@@ -474,12 +563,12 @@
                     <button
                         class="foto-galeria"
                         data-imagen="img/galeria2.jpg"
-                        aria-label="Ver imagen de Dátiles del Valle"
+                        aria-label="Ver presentación de dátiles Medjool"
                     >
 
                         <img
                             src="img/galeria2.jpg"
-                            alt="Presentación de dátiles Medjool"
+                            alt="Presentación de dátiles Medjool seleccionados"
                             loading="lazy"
                         >
 
@@ -489,12 +578,12 @@
                     <button
                         class="foto-galeria"
                         data-imagen="img/galeria3.jpg"
-                        aria-label="Ver imagen de Dátiles del Valle"
+                        aria-label="Ver dátiles Medjool seleccionados en Mexicali"
                     >
 
                         <img
                             src="img/galeria3.jpg"
-                            alt="Dátiles Medjool seleccionados en Mexicali"
+                            alt="Dátiles Medjool seleccionados en Mexicali, Baja California"
                             loading="lazy"
                         >
 
@@ -507,7 +596,7 @@
         </section>
 
 
-        <!-- Facebook -->
+        <!-- FACEBOOK -->
         <section class="facebook seccion-animada">
 
             <div class="contenedor facebook-contenido">
@@ -523,9 +612,9 @@
                     </h2>
 
                     <p>
-                        Consulta nuestras publicaciones,
-                        fotografías y novedades directamente
-                        en nuestra página.
+                        Consulta publicaciones, fotografías,
+                        novedades e información sobre nuestros
+                        dátiles Medjool directamente en Facebook.
                     </p>
 
                 </div>
@@ -536,6 +625,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="boton boton-claro"
+                    aria-label="Visitar Facebook de Dátiles del Valle"
                 >
                     Ir a Facebook
                 </a>
@@ -545,7 +635,7 @@
         </section>
 
 
-        <!-- Contacto -->
+        <!-- CONTACTO -->
         <section class="seccion contacto seccion-animada"
                  id="contacto">
 
@@ -558,13 +648,14 @@
                     </span>
 
                     <h2>
-                        ¿Quieres saber más?
+                        Dátiles Medjool con envíos a todo México
                     </h2>
 
                     <p>
-                        Para información sobre nuestros dátiles Medjool,
-                        disponibilidad y envíos a todo México,
-                        contáctanos por WhatsApp o Facebook.
+                        Consulta disponibilidad e información
+                        sobre nuestros dátiles Medjool desde Mexicali,
+                        Baja California, con envíos a todo México.
+                        Contáctanos por WhatsApp o Facebook.
                     </p>
 
                 </div>
@@ -572,7 +663,7 @@
 
                 <div class="contacto-caja">
 
-                    <!-- Datos -->
+                    <!-- DATOS -->
                     <div class="contacto-datos">
 
                         <span class="contacto-marca">
@@ -584,7 +675,7 @@
                         </h3>
 
 
-                        <!-- Dirección -->
+                        <!-- DIRECCIÓN -->
                         <div class="contacto-item">
 
                             <div class="contacto-icono"
@@ -597,7 +688,10 @@
                             </div>
 
                             <div>
-                                <strong>Dirección:</strong>
+
+                                <strong>
+                                    Dirección:
+                                </strong>
 
                                 <p>
                                     Calzada Francisco L. Montejano No. 1298,
@@ -605,12 +699,13 @@
                                     Mexicali, Baja California,
                                     México, C.P. 21270.
                                 </p>
+
                             </div>
 
                         </div>
 
 
-                        <!-- Teléfono -->
+                        <!-- TELÉFONO -->
                         <div class="contacto-item">
 
                             <div class="contacto-icono"
@@ -623,13 +718,20 @@
                             </div>
 
                             <div>
-                                <strong>Teléfono y WhatsApp:</strong>
+
+                                <strong>
+                                    Teléfono y WhatsApp:
+                                </strong>
 
                                 <p>
-                                    <a href="tel:+526867595757">
+                                    <a
+                                        href="tel:+526867595757"
+                                        aria-label="Llamar a Dátiles del Valle al +52 686 759 5757"
+                                    >
                                         +52 686 759 5757
                                     </a>
                                 </p>
+
                             </div>
 
                         </div>
@@ -637,10 +739,10 @@
                     </div>
 
 
-                    <!-- Botones -->
+                    <!-- BOTONES -->
                     <div class="contacto-botones">
 
-                        <!-- WhatsApp -->
+                        <!-- WHATSAPP -->
                         <a
                             href="https://wa.me/526867595757?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20d%C3%A1tiles%20Medjool%20de%20D%C3%A1tiles%20del%20Valle."
                             target="_blank"
@@ -670,7 +772,7 @@
                         </a>
 
 
-                        <!-- Facebook -->
+                        <!-- FACEBOOK -->
                         <a
                             href="https://www.facebook.com/share/1FQwCUBcZm/"
                             target="_blank"
@@ -708,14 +810,16 @@
     </main>
 
 
-    <!-- Pie de página -->
+    <!-- PIE DE PÁGINA -->
     <footer class="pie">
 
         <div class="contenedor pie-contenido">
 
             <div class="logo logo-pie">
 
-                <span>DÁTILES</span>
+                <span>
+                    DÁTILES
+                </span>
 
                 <small>
                     DEL VALLE
@@ -733,13 +837,14 @@
     </footer>
 
 
-    <!-- Ventana de galería -->
-    <div class="modal" id="modal">
+    <!-- VENTANA DE GALERÍA -->
+    <div class="modal"
+         id="modal">
 
         <button
             class="cerrar-modal"
             id="cerrarModal"
-            aria-label="Cerrar"
+            aria-label="Cerrar galería"
         >
             ×
         </button>
@@ -757,7 +862,7 @@
         <img
             id="imagenModal"
             src=""
-            alt="Vista ampliada de productos de Dátiles del Valle"
+            alt="Vista ampliada de dátiles Medjool de Dátiles del Valle"
         >
 
 
@@ -772,16 +877,16 @@
     </div>
 
 
-    <!-- Volver arriba -->
+    <!-- VOLVER ARRIBA -->
     <button
         id="volverArriba"
         class="volver-arriba"
-        aria-label="Volver arriba">
+        aria-label="Volver al inicio">
         ↑
     </button>
 
 
-    <!-- JavaScript -->
+    <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
 
 </body>
