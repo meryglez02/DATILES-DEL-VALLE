@@ -498,30 +498,144 @@ button {
     color: white;
     padding: 45px;
     border-radius: 28px;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+    gap: 50px;
     align-items: center;
+
+    box-shadow: 0 22px 55px rgba(55, 35, 23, 0.14);
 }
 
 .contacto-caja > div {
-    max-width: 650px;
+    max-width: none;
 }
 
-.contacto-caja span {
+.contacto-marca {
+    display: block;
     font-size: 0.75rem;
     letter-spacing: 3px;
     color: #d7be9b;
+    font-weight: 700;
 }
 
 .contacto-caja h3 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 2rem;
-    margin: 6px 0 10px;
+    margin: 6px 0 24px;
 }
 
 .contacto-caja p {
     color: rgba(255,255,255,0.78);
+}
+
+/* Dirección y teléfono */
+
+.contacto-datos {
+    min-width: 0;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.contacto-item strong {
+    display: block;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.contacto-item p {
+    margin: 0;
+}
+
+.contacto-item a {
+    color: white;
+    transition: 0.25s ease;
+}
+
+.contacto-item a:hover {
+    color: #e5cfaa;
+}
+
+.contacto-icono {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    border-radius: 50%;
+    background: #d7ae78;
+    display: grid;
+    place-items: center;
+    margin-top: 2px;
+}
+
+.contacto-icono svg {
+    width: 22px;
+    height: 22px;
+    fill: #4b3223;
+}
+
+/* Botones de contacto */
+
+.contacto-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+.boton-contacto {
+    width: 100%;
+    min-height: 64px;
+
+    display: grid;
+    grid-template-columns: 42px 1fr 22px;
+    align-items: center;
+    gap: 12px;
+
+    padding: 11px 20px;
+    border-radius: 999px;
+
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+
+.boton-contacto:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.05);
+}
+
+.boton-whatsapp {
+    background: #25D366;
+    box-shadow: 0 12px 28px rgba(37, 211, 102, 0.2);
+}
+
+.boton-facebook-contacto {
+    background: #1877F2;
+    box-shadow: 0 12px 28px rgba(24, 119, 242, 0.2);
+}
+
+.icono-red {
+    width: 38px;
+    height: 38px;
+    fill: white;
+}
+
+.flecha-contacto {
+    color: white !important;
+    font-size: 2rem !important;
+    letter-spacing: 0 !important;
+    line-height: 1;
+    text-align: right;
 }
 
 /* FOOTER */
@@ -704,6 +818,15 @@ button {
     .galeria-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .contacto-caja {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .contacto-botones {
+        max-width: 520px;
+    }
 }
 
 /* CELULAR */
@@ -769,14 +892,60 @@ button {
     }
 
     .facebook-contenido,
-    .contacto-caja,
     .pie-contenido {
         flex-direction: column;
         align-items: flex-start;
     }
 
+    /* Contacto en celular */
+
     .contacto-caja {
-        padding: 32px 24px;
+        padding: 32px 22px;
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .contacto-caja h3 {
+        font-size: 1.7rem;
+    }
+
+    .contacto-item {
+        gap: 12px;
+    }
+
+    .contacto-icono {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .contacto-icono svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contacto-botones {
+        width: 100%;
+        max-width: none;
+        gap: 14px;
+    }
+
+    .boton-contacto {
+        width: 100%;
+        min-height: 60px;
+        grid-template-columns: 36px 1fr 18px;
+        padding: 10px 16px;
+        gap: 10px;
+        font-size: 0.92rem;
+    }
+
+    .icono-red {
+        width: 34px;
+        height: 34px;
+    }
+
+    .flecha-contacto {
+        font-size: 1.7rem !important;
     }
 
     .pie-contenido {
